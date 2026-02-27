@@ -27,7 +27,7 @@ npm install -g bear-notes-cli
 Or from source:
 
 ```bash
-git clone https://github.com/Robdel12/bear-cli.git
+git clone https://github.com/Robdel12/bear-notes-cli.git
 cd bear-cli
 npm link
 ```
