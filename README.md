@@ -51,14 +51,6 @@ Backlinks:   89
 Todos:       56 done, 31 remaining
 ```
 
-For write commands (create, edit, trash, etc.), you'll need an API token:
-
-```bash
-bear config set token YOUR_TOKEN
-```
-
-Find your token in Bear under **Help > Advanced > API Token**.
-
 ## Commands
 
 Every command supports `--help` for usage details and `--json` for structured output.
@@ -203,8 +195,6 @@ pbpaste | bear create --title "From Clipboard"
 
 `bear new` works as an alias.
 
-By default, `create` waits for Bear's callback to return the new note ID. Skip the wait with `--no-wait` if you don't need it.
-
 ### Editing Notes
 
 Append, prepend, or replace text in an existing note:
@@ -302,10 +292,9 @@ bear --json list --has-todo | jq '.[] | select(.todosIncomplete > 0) | .title'
 Config lives at `~/.bear-cli.json`.
 
 ```bash
-bear config set token YOUR_API_TOKEN   # required for write commands
 bear config set defaultLimit 50        # change default list limit
 bear config set defaultSort created    # change default sort
-bear config get token                  # check a value
+bear config get defaultLimit           # check a value
 bear config list                       # show all settings
 bear config path                       # print config file location
 ```
@@ -344,7 +333,6 @@ bear-cli/
 
 - `node:sqlite` -- SQLite support (Node 22+)
 - `node:util` -- `parseArgs` for CLI argument parsing
-- `node:http` -- temporary callback server for x-callback-url responses
 - `node:child_process` -- `execSync` to open bear:// URLs
 - `node:fs` -- config and export file operations
 
