@@ -21,8 +21,14 @@ bear-cli takes a hybrid approach:
 ## Installing
 
 ```bash
-git clone https://github.com/Robdel12/bear-cli.git ~/Developer/bear-cli
-cd ~/Developer/bear-cli
+npm install -g bear-notes-cli
+```
+
+Or from source:
+
+```bash
+git clone https://github.com/Robdel12/bear-cli.git
+cd bear-cli
 npm link
 ```
 

@@ -1,5 +1,5 @@
 {
-  "name": "bear-cli",
+  "name": "bear-notes-cli",
   "version": "0.1.0",
   "description": "CLI for managing Bear notes on macOS",
   "type": "module",
