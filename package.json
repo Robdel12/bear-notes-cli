@@ -4,7 +4,7 @@
   "description": "CLI for managing Bear notes on macOS",
   "type": "module",
   "bin": {
-    "bear": "./bin/bear.js"
+    "bear": "bin/bear.js"
   },
   "engines": {
     "node": ">=22.0.0"
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Robdel12/bear-notes-cli.git"
+    "url": "git+https://github.com/Robdel12/bear-notes-cli.git"
   },
   "keywords": [
     "bear",
