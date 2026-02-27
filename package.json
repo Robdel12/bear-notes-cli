@@ -9,5 +9,19 @@
   "engines": {
     "node": ">=22.0.0"
   },
+  "files": [
+    "bin/",
+    "lib/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Robdel12/bear-cli.git"
+  },
+  "keywords": [
+    "bear",
+    "notes",
+    "cli",
+    "macos"
+  ],
   "license": "MIT"
 }
